@@ -992,12 +992,12 @@ const createScene = () => {
   // console.log(ssao);
   // scene.prePassRenderer.samples = 25;
 
-  // let defaultRendering = new BABYLON.DefaultRenderingPipeline("defRend", true, scene);
+  let defaultRendering = new BABYLON.DefaultRenderingPipeline("defRend", true, scene);
 
-  // defaultRendering.fxaaEnabled = true;
-  // defaultRendering.samples = 8;
+  defaultRendering.fxaaEnabled = true;
+  defaultRendering.samples = 8;
 
-  // console.log(defaultRendering);
+  console.log(defaultRendering);
 
   // // Attach camera to the SSAO render pipeline
   // scene.postProcessRenderPipelineManager.attachCamerasToRenderPipeline("ssao", camera);
