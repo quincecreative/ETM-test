@@ -978,19 +978,19 @@ const createScene = () => {
       });
     }
   );
-  let ssaoRatio = {
-    ssaoRatio: 0.5,
-    blurRatio: 1,
-  }; // Ratio of the SSAO post-process, in a lower resolution
+  // let ssaoRatio = {
+  //   ssaoRatio: 0.5,
+  //   blurRatio: 1,
+  // }; // Ratio of the SSAO post-process, in a lower resolution
 
-  let ssao = new BABYLON.SSAO2RenderingPipeline("ssao2", scene, ssaoRatio, [camera]);
-  ssao.totalStrength = 1.6;
-  ssao.base = 0;
-  ssao.radius = 1;
-  ssao.epsilon = 0.01;
-  ssao.samples = 25;
-  console.log(ssao);
-  scene.prePassRenderer.samples = 25;
+  // let ssao = new BABYLON.SSAO2RenderingPipeline("ssao2", scene, ssaoRatio, [camera]);
+  // ssao.totalStrength = 1.6;
+  // ssao.base = 0;
+  // ssao.radius = 1;
+  // ssao.epsilon = 0.01;
+  // ssao.samples = 25;
+  // console.log(ssao);
+  // scene.prePassRenderer.samples = 25;
 
   // let defaultRendering = new BABYLON.DefaultRenderingPipeline("defRend", true, scene);
 
@@ -1000,7 +1000,7 @@ const createScene = () => {
   // console.log(defaultRendering);
 
   // Attach camera to the SSAO render pipeline
-  scene.postProcessRenderPipelineManager.attachCamerasToRenderPipeline("ssao", camera);
+  // scene.postProcessRenderPipelineManager.attachCamerasToRenderPipeline("ssao", camera);
 
   return scene;
 };
