@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>Electronic Torque Manager (ETM)</title>
+
+    <!-- Babylon.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.6.2/dat.gui.min.js"></script>
+    <script src="https://assets.babylonjs.com/generated/Assets.js"></script>
+    <script src="https://cdn.babylonjs.com/recast.js"></script>
+    <script src="https://cdn.babylonjs.com/ammo.js"></script>
+    <script src="https://cdn.babylonjs.com/havok/HavokPhysics_umd.js"></script>
+    <script src="https://cdn.babylonjs.com/cannon.js"></script>
+    <script src="https://cdn.babylonjs.com/Oimo.js"></script>
+    <script src="https://cdn.babylonjs.com/earcut.min.js"></script>
+    <script src="https://cdn.babylonjs.com/babylon.js"></script>
+    <script src="https://cdn.babylonjs.com/materialsLibrary/babylonjs.materials.min.js"></script>
+    <script src="https://cdn.babylonjs.com/proceduralTexturesLibrary/babylonjs.proceduralTextures.min.js"></script>
+    <script src="https://cdn.babylonjs.com/postProcessesLibrary/babylonjs.postProcess.min.js"></script>
+    <script src="https://cdn.babylonjs.com/loaders/babylonjs.loaders.js"></script>
+    <script src="https://cdn.babylonjs.com/serializers/babylonjs.serializers.min.js"></script>
+    <script src="https://cdn.babylonjs.com/gui/babylon.gui.min.js"></script>
+    <script src="https://cdn.babylonjs.com/inspector/babylon.inspector.bundle.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div id="canvasZone"><canvas id="renderCanvas"></canvas></div>
+    <header id="header">
+      <div id="topPart">
+        <img width="150" height="100" src="gkn-au-stacked.svg" alt="icon" id="icon" />
+        <!-- <div id="linkAndSerch">
+          <a href="/">Contact</a><a href="/">Careers</a>
+
+          <button></button>
+        </div> -->
+        <h2>Electronic Torque Manager (ETM)</h2>
+      </div>
+    </header>
+    <div id="desBox">
+      <div id="desVideoBox">
+        <img width="100%" height="100%" src="housing.jpg" alt="icon" id="image" />
+      </div>
+      <div id="desTextBox">
+        <h2>Housing</h2>
+
+        <ul>
+          <li>
+            Our state-of-the-art differential housings can be tailored to meet the required customer
+            packaging spaces and interface dimensions.
+          </li>
+          <li>Friction coupling is nested within the differential housing.</li>
+          <li>
+            The coupling can be arranged for symmetric or asymmetric differential center layouts.
+          </li>
+          <li>
+            Final drive gears can be welded or bolted, depending on customer preferences. /li>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="desBoxM">
+      <div id="desTextBoxM">
+        <h2>Electronic Torque Manager (ETM)</h2>
+        <div>
+        Our ETM has a solid track record on many vehicles, independent of their propulsion system,
+including one of the most powerful series production AWD BEV sportscars on the market. Its
+direct actuation method provides responsive and controllable electronically controlled
+driveline and axle coupling.
+        </div>
+      </div>
+    </div>
+
+    <button id="cameraBtn">
+     <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/home.png" alt="home"/>
+    </button>
+    <button id="openBtn">
+      <img
+        width="50"
+        height="50"
+        src="https://img.icons8.com/ios-filled/50/split-files.png"
+        alt="split-files"
+      />
+    </button>
+    <button id="playBtn">
+      <img
+        width="64"
+        height="64"
+        src="https://img.icons8.com/sf-black-filled/64/play.png"
+        alt="play"
+      />
+    </button>
+
+    <script src="main.js"></script>
+  </body>
+</html>
