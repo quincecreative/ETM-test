@@ -217,3 +217,10 @@ body {
   font-size: 2em;
   color: white;
 }
+
+.add-button {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  display: none;
+}
