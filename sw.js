@@ -12,6 +12,7 @@ self.addEventListener("install", (e) => {
           "/ETM-test/motor.JPG",
           "/ETM-test/actuator.JPG",
           "/ETM-test/coupling.JPG",
+          "/ETM-test/housing.JPG",
           "/ETM-test/Cheveron_process copy-frei.png",
           "/ETM-test/download.png",
           "/ETM-test/environment.env",
