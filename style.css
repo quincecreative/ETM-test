@@ -138,11 +138,11 @@ body {
 }
 
 #cameraBtn {
-  width: 12dvh;
-  height: 12dvh;
+  width: 10dvh;
+  height: 10dvh;
   position: absolute;
   top: 85dvh;
-  left: 2rem;
+  left: 2dvh;
   background-color: #fc3;
   border: solid #cfcfcf 5px;
   padding: 2rem;
@@ -155,11 +155,11 @@ body {
 }
 
 #openBtn {
-  width: 12dvh;
-  height: 12dvh;
+  width: 10dvh;
+  height: 10dvh;
   position: absolute;
   top: 85dvh;
-  left: 7rem;
+  left: 14dvh;
   background-color: #fc3;
   border: solid #cfcfcf 5px;
   padding: 2rem;
@@ -172,11 +172,11 @@ body {
 }
 
 #playBtn {
-  width: 12dvh;
-  height: 12dvh;
+  width: 10dvh;
+  height: 10dvh;
   position: absolute;
   top: 85dvh;
-  left: 12rem;
+  left: 26dvh;
   background-color: #fc3;
   border: solid #cfcfcf 5px;
   padding: 2rem;
