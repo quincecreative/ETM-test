@@ -141,7 +141,7 @@ body {
   width: 10dvh;
   height: 10dvh;
   position: absolute;
-  top: 85dvh;
+  top: 80dvh;
   left: 2dvh;
   background-color: #fc3;
   border: solid #cfcfcf 5px;
@@ -158,8 +158,8 @@ body {
   width: 10dvh;
   height: 10dvh;
   position: absolute;
-  top: 85dvh;
-  left: 14dvh;
+  top: 80dvh;
+  left: 24dvh;
   background-color: #fc3;
   border: solid #cfcfcf 5px;
   padding: 2rem;
@@ -175,8 +175,8 @@ body {
   width: 10dvh;
   height: 10dvh;
   position: absolute;
-  top: 85dvh;
-  left: 26dvh;
+  top: 80dvh;
+  left: 46dvh;
   background-color: #fc3;
   border: solid #cfcfcf 5px;
   padding: 2rem;
