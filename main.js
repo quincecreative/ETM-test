@@ -730,6 +730,19 @@ const createScene = () => {
   let sphereTargetGear = BABYLON.MeshBuilder.CreateSphere("sphere", { diameter: 0.01 }, scene);
   sphereTargetGear.visibility = 0;
 
+  let previousOrientation = window.orientation;
+  let checkOrientation = function () {
+    console.log(previousOrientation);
+    if (window.orientation !== previousOrientation) {
+      previousOrientation = window.orientation;
+
+      // orientation changed, do your magic here
+    }
+  };
+
+  window.addEventListener("resize", checkOrientation, false);
+  window.addEventListener("orientationchange", checkOrientation, false);
+
   BABYLON.SceneLoader.ImportMesh(
     "",
     "",
