@@ -138,8 +138,8 @@ body {
 }
 
 #cameraBtn {
-  width: 4.5rem;
-  height: 4.5rem;
+  width: 12dvh;
+  height: 12dvh;
   position: absolute;
   top: 85dvh;
   left: 2rem;
@@ -155,8 +155,8 @@ body {
 }
 
 #openBtn {
-  width: 4.5rem;
-  height: 4.5rem;
+  width: 12dvh;
+  height: 12dvh;
   position: absolute;
   top: 85dvh;
   left: 7rem;
@@ -172,8 +172,8 @@ body {
 }
 
 #playBtn {
-  width: 4.5rem;
-  height: 4.5rem;
+  width: 12dvh;
+  height: 12dvh;
   position: absolute;
   top: 85dvh;
   left: 12rem;
@@ -216,11 +216,4 @@ body {
   left: 2vw;
   font-size: 2em;
   color: white;
-}
-
-.add-button {
-  position: absolute;
-  top: 1px;
-  left: 1px;
-  display: none;
 }
