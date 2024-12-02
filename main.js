@@ -730,21 +730,18 @@ const createScene = () => {
   let sphereTargetGear = BABYLON.MeshBuilder.CreateSphere("sphere", { diameter: 0.01 }, scene);
   sphereTargetGear.visibility = 0;
 
-  let checkOrientation = function () {
-    console.log(window.innerWidth);
-    console.log(window.orientation);
+  function checkOrientation() {
     if (window.innerWidth < 960) {
-      if (window.orientation != 90) {
-        document.getElementById("rotationRequest").style.display = "flex";
-
-        // orientation changed, do your magic here
-      } else {
+      const orientationType = window.screen.orientation.type;
+      if (orientationType.includes("landscape")) {
         document.getElementById("rotationRequest").style.display = "none";
+      } else {
+        document.getElementById("rotationRequest").style.display = "flex";
       }
     } else {
       document.getElementById("rotationRequest").style.display = "none";
     }
-  };
+  }
 
   window.addEventListener("resize", checkOrientation, false);
   window.addEventListener("orientationchange", checkOrientation, false);
