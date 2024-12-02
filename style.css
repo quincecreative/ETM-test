@@ -218,13 +218,13 @@ body {
   color: white;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px) {
   #header {
     height: 12dvh;
   }
   #topPart h2 {
     font-size: 1.5em;
-    color: rgb(158, 36, 36);
+    color: rgb(243, 153, 153);
   }
   #topPart img {
     width: 80px;
