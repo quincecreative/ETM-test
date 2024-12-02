@@ -219,9 +219,12 @@ body {
 }
 
 @media only screen and (max-width: 758px) {
+  #header {
+    height: 12dvh;
+  }
   #topPart h2 {
     font-size: 1.5em;
-    color: white;
+    color: rgb(158, 36, 36);
   }
   #topPart img {
     width: 80px;
@@ -265,9 +268,11 @@ body {
   #desBoxM {
     font-size: 14px;
     font-weight: 400;
+    height: 88dvh;
   }
   #desBox {
     font-size: 14px;
     font-weight: 400;
+    height: 88dvh;
   }
 }
