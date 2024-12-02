@@ -218,7 +218,7 @@ body {
   color: white;
 }
 
-@media only screen and (max-width: 758px) {
+@media only screen and (max-width: 768px) {
   #header {
     height: 12dvh;
   }
