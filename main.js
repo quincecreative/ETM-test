@@ -742,6 +742,7 @@ const createScene = () => {
       document.getElementById("rotationRequest").style.display = "none";
     }
   }
+  checkOrientation();
 
   window.addEventListener("resize", checkOrientation, false);
   window.addEventListener("orientationchange", checkOrientation, false);
