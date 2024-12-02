@@ -731,6 +731,7 @@ const createScene = () => {
   sphereTargetGear.visibility = 0;
 
   let checkOrientation = function () {
+    console.log(window.orientation);
     if (window.orientation != 90) {
       document.getElementById("rotationRequest").style.display = "flex";
 
