@@ -1,7 +1,7 @@
 // Register service worker to control making site work offline
 
 if ("serviceWorker" in navigator) {
-  navigator.serviceWorker.register("/ETM/sw.js").then(() => {
+  navigator.serviceWorker.register("/ETM-test/sw.js").then(() => {
     console.log("Service Worker Registered");
   });
 }

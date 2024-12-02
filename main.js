@@ -731,11 +731,16 @@ const createScene = () => {
   sphereTargetGear.visibility = 0;
 
   let checkOrientation = function () {
+    console.log(window.innerWidth);
     console.log(window.orientation);
-    if (window.orientation != 90) {
-      document.getElementById("rotationRequest").style.display = "flex";
+    if (window.innerWidth < 960) {
+      if (window.orientation != 90) {
+        document.getElementById("rotationRequest").style.display = "flex";
 
-      // orientation changed, do your magic here
+        // orientation changed, do your magic here
+      } else {
+        document.getElementById("rotationRequest").style.display = "none";
+      }
     } else {
       document.getElementById("rotationRequest").style.display = "none";
     }
