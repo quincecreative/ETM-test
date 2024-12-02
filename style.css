@@ -138,11 +138,11 @@ body {
 }
 
 #cameraBtn {
-  width: 10dvh;
-  height: 10dvh;
+  width: 4.5rem;
+  height: 4.5rem;
   position: absolute;
-  top: 80dvh;
-  left: 2dvh;
+  top: 85dvh;
+  left: 2rem;
   background-color: #fc3;
   border: solid #cfcfcf 5px;
   padding: 2rem;
@@ -155,11 +155,11 @@ body {
 }
 
 #openBtn {
-  width: 10dvh;
-  height: 10dvh;
+  width: 4.5rem;
+  height: 4.5rem;
   position: absolute;
-  top: 80dvh;
-  left: 24dvh;
+  top: 85dvh;
+  left: 7rem;
   background-color: #fc3;
   border: solid #cfcfcf 5px;
   padding: 2rem;
@@ -172,11 +172,11 @@ body {
 }
 
 #playBtn {
-  width: 10dvh;
-  height: 10dvh;
+  width: 4.5rem;
+  height: 4.5rem;
   position: absolute;
-  top: 80dvh;
-  left: 46dvh;
+  top: 85dvh;
+  left: 12rem;
   background-color: #fc3;
   border: solid #cfcfcf 5px;
   padding: 2rem;
@@ -216,4 +216,58 @@ body {
   left: 2vw;
   font-size: 2em;
   color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  #topPart h2 {
+    font-size: 1.5em;
+    color: white;
+  }
+  #topPart img {
+    width: 80px;
+    height: 50px;
+  }
+  #cameraBtn {
+    width: 3.5rem;
+    height: 3.5rem;
+    top: 80dvh;
+    left: 1rem;
+    padding: 1rem;
+  }
+  #openBtn {
+    width: 3.5rem;
+    height: 3.5rem;
+    top: 80dvh;
+    left: 5rem;
+    border-radius: 3rem;
+    padding: 1rem;
+  }
+  #playBtn {
+    width: 3.5rem;
+    height: 3.5rem;
+    top: 80dvh;
+    left: 9rem;
+    border-radius: 3rem;
+    padding: 1rem;
+  }
+  #cameraBtn img {
+    width: 40px;
+    height: 40px;
+  }
+  #openBtn img {
+    width: 40px;
+    height: 40px;
+  }
+  #playBtn img {
+    width: 40px;
+    height: 40px;
+  }
+  #desBoxM {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  #desBox {
+    font-size: 14px;
+    font-weight: 400;
+  }
 }
