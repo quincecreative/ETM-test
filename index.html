@@ -6,10 +6,6 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
-    <meta
-      name="viewport"
-      content="minimal-ui, width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
-    />
 
     <title>Electronic Torque Manager (ETM)</title>
 
@@ -33,11 +29,12 @@
 
     <link rel="manifest" href="manifest.webmanifest" />
     <script src="index.js" defer></script>
+
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <button class="add-button">Add to home screen</button>
+    <div id="rotationRequest">Rotate device</div>
     <div id="canvasZone"><canvas id="renderCanvas"></canvas></div>
     <header id="header">
       <div id="topPart">

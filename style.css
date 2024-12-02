@@ -218,6 +218,21 @@ body {
   color: white;
 }
 
+#rotationRequest {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #1a2b42;
+  font-family: "Helvetic Bold", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  color: #cfcfcf;
+  z-index: 10000;
+  position: absolute;
+  font-size: larger;
+}
+
 @media only screen and (max-width: 950px) {
   #header {
     height: 12dvh;

@@ -118,7 +118,7 @@ const createScene = () => {
       value: new BABYLON.Vector3(camera.position.x, camera.position.y, camera.position.z),
     });
     keyFramesP.push({
-      frame: 220,
+      frame: 320,
       value: new BABYLON.Vector3(0.7329886644739387, 2.3836616235438863, 10.471796766488357),
     });
     cameraStartP.setKeys(keyFramesP);
@@ -572,13 +572,13 @@ const createScene = () => {
       // animationGroups[0].stop();
       if (animationGroupS.isStarted) {
         let masterFrame = animationGroupS.animatables[0].masterFrame;
-        scene.beginDirectAnimation(camera, [cameraStartP], 1, 220, false);
+        scene.beginDirectAnimation(camera, [cameraStartP], 1, 320, false);
 
         animationGroupS.stop();
 
         animationGroupS.start(false, 1, masterFrame, 1);
       } else {
-        scene.beginDirectAnimation(camera, [cameraStartP], 1, 220, false);
+        scene.beginDirectAnimation(camera, [cameraStartP], 1, 320, false);
 
         animationGroupS.stop();
 
@@ -730,13 +730,13 @@ const createScene = () => {
   let sphereTargetGear = BABYLON.MeshBuilder.CreateSphere("sphere", { diameter: 0.01 }, scene);
   sphereTargetGear.visibility = 0;
 
-  let previousOrientation = window.orientation;
   let checkOrientation = function () {
-    console.log(previousOrientation);
-    if (window.orientation !== previousOrientation) {
-      previousOrientation = window.orientation;
+    if (window.orientation != 90) {
+      document.getElementById("rotationRequest").style.display = "flex";
 
       // orientation changed, do your magic here
+    } else {
+      document.getElementById("rotationRequest").style.display = "none";
     }
   };
 
@@ -862,6 +862,7 @@ const createScene = () => {
       scene.onBeforeRenderObservable.add(() => {
         if (opened) {
           if (target1.alpha < 1) {
+            console.log(target1.alpha);
             target1.alpha += 0.05;
             target2.alpha += 0.05;
             target3.alpha += 0.05;
@@ -869,6 +870,7 @@ const createScene = () => {
             target5.alpha += 0.05;
           }
         } else if (target1.alpha > 0) {
+          console.log(target1.alpha);
           target1.alpha -= 0.05;
           target2.alpha -= 0.05;
           target3.alpha -= 0.05;
@@ -1010,7 +1012,7 @@ const createScene = () => {
 
   // console.log(defaultRendering);
 
-  // Attach camera to the SSAO render pipeline
+  // // Attach camera to the SSAO render pipeline
   // scene.postProcessRenderPipelineManager.attachCamerasToRenderPipeline("ssao", camera);
 
   return scene;

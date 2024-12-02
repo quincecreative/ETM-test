@@ -1,15 +1,15 @@
 {
-  "background_color": "purple",
-  "description": "Shows random fox pictures. Hey, at least it isn't cats.",
+  "background_color": "white",
+  "description": "ETM model",
   "display": "fullscreen",
   "icons": [
     {
-      "src": "icon/fox-icon.png",
-      "sizes": "192x192",
+      "src": "Icon.png",
+      "sizes": "150x150",
       "type": "image/png"
     }
   ],
-  "name": "Awesome fox pictures",
-  "short_name": "Foxes",
-  "start_url": "/ETM-test/index.html"
+  "name": "ETM",
+  "short_name": "ETM",
+  "start_url": "/ETM/index.html"
 }
